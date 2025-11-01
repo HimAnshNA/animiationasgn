@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: grid;
+        gap: 10px;
+        width: 700px;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid black;
+        grid-template-columns: 3fr 1fr;
+
+        grid-template-rows: auto auto 1fr 1fr auto;
+
+        grid-template-areas:
+          "header header"
+          "nav nav"
+          "section aside"
+          "article aside"
+          "footer footer";
+      }
+
+      .item {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+      }
+
+      .item1 {
+        grid-area: header;
+        background-color: #e53935;
+      }
+      .item2 {
+        grid-area: nav;
+        background-color: #00bcd4;
+      }
+      .item3 {
+        grid-area: section;
+        background-color: #ffb300;
+        color: black;
+      }
+      .item4 {
+        grid-area: article;
+        background-color: #ff7043;
+      }
+      .item5 {
+        grid-area: aside;
+        background-color: #ec407a;
+      }
+      .item6 {
+        grid-area: footer;
+        background-color: #616161;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">&lt;header&gt;</div>
+      <div class="item item2">&lt;nav&gt;</div>
+      <div class="item item3">&lt;section&gt;</div>
+      <div class="item item4">&lt;article&gt;</div>
+      <div class="item item5">&lt;aside&gt;</div>
+      <div class="item item6">&lt;footer&gt;</div>
+    </div>
+  </body>
+</html>

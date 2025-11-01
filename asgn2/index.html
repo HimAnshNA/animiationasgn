@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEXANT</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: white;
+      }
+      .main-bg {
+        padding-top: 30px;
+        background-image: url("./background.jpg");
+        height: 100vh;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        transform: color 0.3s;
+      }
+      .navbar {
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+      }
+      .nav-container {
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+      }
+
+      .logo-div {
+        width: 30%;
+      }
+      .logo {
+        height: 50px;
+      }
+      .nav-links {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+      }
+      .nav-links a:hover {
+        color: #a1462f;
+      }
+
+      .Contact-btn {
+        background-color: #43ba7f;
+        color: white;
+
+        height: 30px;
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      main {
+        height: 100vh;
+      }
+
+      .title {
+        width: 50%;
+        margin-top: 50px;
+        margin-left: 65px;
+        color: white;
+      }
+      .title h1 {
+        font-size: 56px;
+      }
+      .title h1 span {
+        color: #ff511a;
+      }
+
+      .div-line {
+        width: 80px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+      .sub-text {
+        color: white;
+        margin-bottom: 50px;
+      }
+
+      .btns {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+      .Discover-btn {
+        background-color: #43ba7f;
+        color: white;
+
+        padding: 12px 30px;
+
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .Contact-us-btn {
+        font-size: 14px;
+        color: #fff;
+        background-color: #ff511a;
+        padding: 12px 30px;
+        cursor: pointer;
+
+        border-radius: 5px;
+      }
+
+      .cards-section {
+        padding: 80px 0;
+      }
+      .cards-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 30px;
+      }
+
+      .card {
+        padding: 30px;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .grid-container {
+        display: grid;
+        gap: 20px;
+
+        grid-template-columns: 1fr 9fr;
+
+      }
+      .item {
+        
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+      }
+         .item-1 {
+          
+            grid-row: 1 / 4; 
+ 
+        }
+.item-1 img{height: 70px;
+width: 70px;}
+       
+        .item-2 {
+            font-size: 20px;
+            font-weight: 600;
+           
+        }
+
+        .item-3 {
+            font-size: 15px;
+            text-align: left;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main-bg">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo-div">
+            <img src="./logo.png" class="logo" alt="logo" />
+          </div>
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Pages ˅</a>
+            <a href="#">Testimonials</a>
+
+            <div class="Contact-btn" href="#">Contact Support</div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="title">
+          <h1>
+            Get <span>ready</span> for your business <br />
+            & upgrade
+            <span>all aspects</span>
+            <div class="div-line"></div>
+          </h1>
+          <div class="sub-text">
+            <p>
+              Mexant HTML5 Template is provided for free of charge. This layout
+              is based on Boostrap 5 CSS framework. Anyone can download and edit
+              for any professional website. Thank you for visiting TemplateMo
+              website.
+            </p>
+          </div>
+
+          <div class="btns">
+            <div class="Discover-btn">Discover More</div>
+
+            <div class="Contact-us-btn">Contact Us</div>
+          </div>
+        </div>
+      </main>
+
+      <section class="cards-section">
+        <div class="cards-container">
+          <div class="cards-grid">
+            <div class="card">
+              <div class="grid-container">
+                <div class="item item-1"><img src="./image1.png" alt="icon1"></div>
+                <div class="item item-2">CSS Templates</div>
+                <div class="item item-3">TemplateMo website is the best for you to explore and download free website templates.</div>
+              </div>
+            </div>
+            <div class="card"><div class="grid-container">
+                <div class="item item-1"><img src="./image2.png" alt="icon2"></div>
+                <div class="item item-2">HTML5 Web Pages</div>
+                <div class="item item-3">Templates are based on Bootstrap 5 CSS framework. You can easily adapt or modify based on your needs.</div>
+              </div></div>
+            <div class="card"><div class="grid-container">
+                <div class="item item-1"><img src="./image3.png" alt="icon3"></div>
+                <div class="item item-2">Responsive Designs</div>
+                <div class="item item-3">All of our CSS templates are 100% free to use for commercial or business websites.</div>
+              </div></div>
+            <div class="card"><div class="grid-container">
+                <div class="item item-1"><img src="./image4.png" alt="icon4"></div>
+                <div class="item item-2">Mobile and Tablet ready!</div>
+                <div class="item item-3">Our HTML CSS templates are well-tested on mobile, tablet, and desktop compatibility.</div>
+              </div></div>
+            <div class="card"><div class="grid-container">
+                <div class="item item-1"><img src="./image5.png" alt="icon5"></div>
+                <div class="item item-2">Fast Customer Support</div>
+                <div class="item item-3">Do not be hesitated to contact us if you have any question or concern about our templates.</div>
+              </div></div>
+            <div class="card"><div class="grid-container">
+                <div class="item item-1 "><img src="./image6.png"  alt="icon6"></div>
+                <div class="item item-2">Fully Customizable</div>
+                <div class="item item-3">If you have any idea or suggestion about new templates, feel free to let us know.</div>
+              </div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
